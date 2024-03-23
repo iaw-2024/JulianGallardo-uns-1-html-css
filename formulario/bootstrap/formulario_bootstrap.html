@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Personajes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="formulario_bootstrap_css.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/listado/bootstrap/listado_bootstrap.html">Listado de Personajes</a>
+
+        </div>
+        <div class="dropdown-center">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Menu
+            </a>
+
+            <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="/listado/html_css/listado_css.html">Listado con Css</a></li>
+                <li><a class="dropdown-item" href="/formulario/html_css/formulario_css.html">Formulario con Css</a>
+                </li>
+                <li><a class="dropdown-item" href="/listado/tailwindcss/listado_tailwind.html">Listado con
+                        Tailwind</a></li>
+                <li><a class="dropdown-item" href="/formulario/tailwindcss/formulario_tailwind.html">Formulario con
+                        Tailwind</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <h1 id="tituloForm" class="text-center">Formulario de Personajes</h1>
+
+    <div class="container-md">
+        <div class="col-md-6 offset-md-3 mt-4">
+            <form id="form" method="post" class="container mt-4">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="raza">Raza:</label>
+                    <input type="text" class="form-control" id="raza" name="raza" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="planeta">Planeta:</label>
+                    <input type="text" class="form-control" id="planeta" name="planeta" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="rol">Rol:</label>
+                    <input type="text" class="form-control" id="rol" name="rol" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="nacimiento">Año de Nacimiento:</label>
+                    <input type="text" class="form-control" id="nacimiento" name="nacimiento" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="peliculas">Películas:</label>
+                    <select id="peliculas" name="peliculas[]" multiple class="form-control">
+                        <option value="Episodio I">Star Wars: Episodio I - La amenaza fantasma</option>
+                        <option value="Episodio II">Star Wars: Episodio II - El ataque de los clones</option>
+                        <option value="Episodio III">Star Wars: Episodio III - La venganza de los Sith</option>
+                        <option value="Episodio IV">Star Wars: Episodio IV - Una nueva esperanza</option>
+                        <option value="Episodio V">Star Wars: Episodio V - El imperio contraataca</option>
+                        <option value="Episodio VI">Star Wars: Episodio VI - El retorno del Jedi</option>
+                        <option value="Episodio VII">Star Wars: Episodio VII - El despertar de la fuerza</option>
+                        <option value="Episodio VIII">Star Wars: Episodio VIII - Los últimos Jedi</option>
+                        <option value="Episodio IX">Star Wars: Episodio IX - El ascenso de Skywalker</option>
+                        <option value="The Clone Wars">Star Wars: The Clone Wars</option>
+                        <option value="The Mandalorian">Star Wars: The Mandalorian</option>
+                        <option value="Rogue One">Star Wars: Rogue One</option>
+                        <option value="Solo">Star Wars: Solo</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Agregar Personaje</button>
+            </form>
+        </div>
+    </div>
+</body>

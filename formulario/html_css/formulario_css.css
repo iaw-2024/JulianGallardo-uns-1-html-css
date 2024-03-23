@@ -1,0 +1,130 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://as01.epimg.net/epik/imagenes/2019/11/21/portada/1574334288_066507_1574334350_noticia_normal_recorte1.jpg");
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+    border: 5px solid rgb(50, 50, 50);
+    background-color: rgb(30, 30, 30);
+    opacity: 90%;
+}
+
+input {
+    margin: 5px;
+    padding: 5px;
+    width: 90%;
+    border-radius: 10px;
+}
+
+#peliculas {
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    padding: 5px;
+}
+
+#btn_submit {
+    margin: 5px;
+    padding: 5px;
+    width: 50%;
+    border-radius: 10px;
+    background-color: #333;
+    color: white;
+
+}
+
+#btn_submit:hover {
+    background-color: #666;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 48px;
+    margin: 5;
+    padding: 0;
+    text-shadow: #333 3px 3px 3px;
+    margin: 5;
+    padding-top: 10px;
+}
+
+h1:hover {
+    color: #FFE81F;
+}
+
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+#nav_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#nav_div a {
+    color: white;
+    text-decoration: none;
+}
+
+#nav_div a:hover {
+    color: #FFE81F;
+    text-decoration: underline;
+}
+
+#nav_div a:active {
+    color: red;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1200px) {
+    form {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    form {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    form {
+        width: 80%;
+        font-size: 14px;
+    }
+
+    input {
+        font-size: 10px;
+    }
+}

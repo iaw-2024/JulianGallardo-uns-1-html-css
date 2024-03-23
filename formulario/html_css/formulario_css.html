@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="formulario_css.css">
+    <title>Formulario de Personajes</title>
+</head>
+<body>
+    <nav id="nav">
+        <div id="nav_div">
+            <a href="/listado/html_css/listado_css.html">Lista de Personajes</a>
+            <a href="/formulario/bootstrap/formulario_bootstrap.html">Formulario con Bootstrap</a>
+            <a href="/formulario/tailwindcss/formulario_tailwind.html">Formulario con Tailwind</a>
+            
+        </div>        
+    </nav>
+
+
+
+    <h1 id="tituloForm">Formulario de Personajes</h1>
+    <form id="form" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="raza">Raza:</label>
+        <input type="text" id="raza" name="raza" required>
+
+        <label for="planeta">Planeta:</label>
+        <input type="text" id="planeta" name="planeta" required>
+
+        
+        <label for="rol">Rol:</label>
+        <input type="text" id="rol" name="planeta" required>
+
+        <label for="nacimiento">Año de Nacimiento:</label>
+        <input type="text" id="nacimiento" name="nacimiento" required>
+
+        <label for="peliculas">Películas:</label>
+        <select id="peliculas" name="peliculas" multiple>
+            <option value="Episodio I">Star Wars: Episodio I - La amenaza fantasma</option>
+            <option value="Episodio II">Star Wars: Episodio II - El ataque de los clones</option>
+            <option value="Episodio III">Star Wars: Episodio III - La venganza de los Sith</option>
+            <option value="Episodio IV">Star Wars: Episodio IV - Una nueva esperanza</option>
+            <option value="Episodio V">Star Wars: Episodio V - El imperio contraataca</option>
+            <option value="Episodio VI">Star Wars: Episodio VI - El retorno del Jedi</option>
+            <option value="Episodio VII">Star Wars: Episodio VII - El despertar de la fuerza</option>
+            <option value="Episodio VIII">Star Wars: Episodio VIII - Los últimos Jedi</option>
+            <option value="Episodio IX">Star Wars: Episodio IX - El ascenso de Skywalker</option>
+            <option value="The Clone Wars">Star Wars: The Clone Wars</option>
+            <option value="The Mandalorian">Star Wars: The Mandalorian</option>
+            <option value="Rogue One">Star Wars: Rogue One</option>
+            <option value="Solo">Star Wars: Solo</option>
+        </select>
+        
+        
+        <input id="btn_submit" type="submit" value="Agregar Personaje">
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,21 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://as01.epimg.net/epik/imagenes/2019/11/21/portada/1574334288_066507_1574334350_noticia_normal_recorte1.jpg");
+}
+h1 {
+    color: white;
+    text-align: center;
+    margin: 5;
+    padding: 0;
+    text-shadow: #333 3px 3px 3px;
+    margin: 5;
+    padding-top: 10px;
+}
+
+h1:hover {
+    color: #FFE81F;
+}

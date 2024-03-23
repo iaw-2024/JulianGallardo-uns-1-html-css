@@ -1,0 +1,19 @@
+body {
+    background-color: black;
+    color: white;
+    background-image: url("https://i.blogs.es/2cc78a/ordenstarwars/1366_2000.jpg");
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin: 5;
+    padding: 0;
+    text-shadow: #333 3px 3px 3px;
+    margin: 5;
+    padding-top: 10px;
+}
+
+h1:hover {
+    color: #FFE81F;
+}
