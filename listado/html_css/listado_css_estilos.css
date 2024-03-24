@@ -113,15 +113,37 @@ h1:hover {
         font-size: 16px;
         /* Increase font size */
     }
+
+    #nav_div {
+        font-size: 18px;
+    }
+
+    #instagramLogo {
+        width: 40px;
+        height: 40px;
+    }
+
+    #swLogo {
+        width: 80px;
+        height: 50px;
+    }
+
+
+
 }
 
 
 
 @media screen and (max-width: 600px) {
-    h1 {
+    h1{
+        margin-top: 60px;
         font-size: 24px;
     }
 
+    #nav_div {
+        font-size: 14px;
+        padding: 5px;
+    }
     table,
     thead,
     tbody,
@@ -139,4 +161,45 @@ h1:hover {
         padding: 3px;
         font-size: 12px;
     }
+
+    #instagramLogo {
+        width: 20px;
+        height: 20px;
+    }
+
+    #swLogo {
+        width: 30px;
+        height: 10px;
+    }
+
+
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+#instagramLogo{
+    width: 50px;
+    height: 50px;
+    padding-left: 50px;
+
+}
+
+#swLogo{
+    width: 100px;
+    height: 50px;
+    padding-right: 50px;
 }

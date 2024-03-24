@@ -6,52 +6,152 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Personajes de Star Wars</title>
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link href="listado_tailwind_estilos.css" rel="stylesheet">
+
 </head>
 
 <body>
-  <nav class="bg-gray-800 text-white">
+  <nav class="bg-gray-800 text-white fixed top-0 w-full">
     <div class="container mx-auto px-4 py-2 flex justify-between items-center">
-      <a href="../../formulario/bootstrap/formulario_bootstrap.html" class="font-bold text-xl">Formulario con Bootstrap</a>
-      <div class="dropdown ">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Menu
-        </button>
-        <ul class="dropdown-menu dropdown-menu-end shadow menu origin-top absolute right-0 mt-2 w-56 z-50 bg-white dark:bg-gray-800 rounded-md shadow-sm">
-          <li><a href="../../listado/html_css/listado_css.html" class="dropdown-item block px-4 py-2 text-sm text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">Listado con Css</a></li>
-          <li><a href="../../formulario/html_css/formulario_css.html" class="dropdown-item block px-4 py-2 text-sm text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">Formulario con Css</a></li>
-          <li><a href="../../listado/tailwindcss/listado_tailwind.html" class="dropdown-item block px-4 py-2 text-sm text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">Listado con Tailwind</a></li>
-          <li><a href="../../formulario/tailwindcss/formulario_tailwind.html" class="dropdown-item block px-4 py-2 text-sm text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">Formulario con Tailwind</a></li>
-        </ul>
-      </div>
+      <a href="../../formulario/tailwindcss/formulario_tailwind.html" class="dropdown-item block px-4 py-2 text-sm text-white dark:text-white hover:bg-gray-100 hover:text-gray-700 dark:hover:bg-gray-700">Formulario con
+        Tailwind</a>
+      <a href="../../listado/html_css/listado_css.html"
+        class="dropdown-item block px-4 py-2 text-sm text-white dark:text-white hover:bg-gray-100 hover:text-gray-700 dark:hover:bg-gray-700">Listado
+        con Css</a>
+      <a href="../../formulario/html_css/formulario_css.html"
+        class="dropdown-item block px-4 py-2 text-sm text-white dark:text-white hover:bg-gray-100 hover:text-gray-700 dark:hover:bg-gray-700">Formulario
+        con Css</a>
+      <a href="../../listado//bootstrap/listado_bootstrap.html"
+        class="dropdown-item block px-4 py-2 text-sm text-white dark:text-white hover:bg-gray-100 hover:text-gray-700 dark:hover:bg-gray-700">Listado
+        con Bootstrap</a>
+      <a href="../../formulario/bootstrap/formulario_bootstrap.html"
+        class="dropdown-item block px-4 py-2 text-sm text-white dark:text-white hover:bg-gray-100 hover:text-gray-700 dark:hover:bg-gray-700">Formulario
+        con Bootstrap</a>
     </div>
   </nav>
 
-  <h1 class="text-center text-3xl mt-6 font-bold">Personajes de Star Wars</h1>
+  <br class="mt-10 md:mt-1"/>
+  <h1 class="text-center text-white text-shadow-lg text-shadow-offset-x-10 font-bold mt-20 mb-5 hover:text-yellow-400 text-4xl">Personajes de Star Wars</h1>
 
   <div class="container mx-auto px-4 mb-4">
-    <table class="table table-striped table-bordered w-full shadow-md rounded-lg">
-      <thead class="text-xs text-gray-700 bg-gray-500 uppercase">
+    <table class="table table-striped table-bordered  w-full shadow-md rounded-lg bg-gray-800 bg-opacity-90 text-white">
+      <thead class="text-xs bg-gray-500 uppercase">
         <tr>
-          <th scope="col" class="px-6 py-3">Nombre</th>
-          <th scope="col" class="px-6 py-3">Raza</th>
-          <th scope="col" class="px-6 py-3">Planeta de Origen</th>
-          <th scope="col" class="px-6 py-3">Rol</th>
-          <th scope="col" class="px-6 py-3">Año de Nacimiento</th>
-          <th scope="col" class="px-6 py-3">Apariciones</th>
+          <th scope="col" class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Nombre</th>
+          <th scope="col" class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Raza</th>
+          <th scope="col" class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Planeta de Origen</th>
+          <th scope="col" class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Rol</th>
+          <th scope="col" class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Año de Nacimiento</th>
+          <th scope="col" class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Apariciones</th>
         </tr>
       </thead>
       <tbody>
-        <tr class="text-gray-700 border-b">
-          <td class="px-6 py-4">Obi-Wan Kenobi</td>
-          <td class="px-6 py-4">Humano</td>
-          <td class="px-6 py-4">Stewjon</td>
-          <td class="px-6 py-4">Jedi Maestro</td>
-          <td class="px-6 py-4">57 ABY</td>
-          <td class="px-6 py-4">Episodios I-VI, The Clone Wars</td>
+        <tr class="border-b  text-center">
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4 md:px-6 py-4">Obi-Wan Kenobi</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Humano</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Stewjon</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Jedi Maestro</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">57 ABY</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Episodios I-VI, The Clone Wars</td>
         </tr>
-        </tbody>
+
+        <tr class="border-b text-center text-center">
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Anakin Skywalker</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Humano</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Tatooine</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Jedi Caballero</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">41.9 ABY</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Episodios I-VI, The Clone Wars</td>
+        </tr>
+        <tr class="border-b text-center">
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Luke Skywalker</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Humano</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Tatooine</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Jedi Maestro</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">19 BBY</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Episodios IV-VI, The Mandalorian</td>
+        </tr>
+        <tr class="border-b text-center">
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Rey</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Humano</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Jakku</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Jedi Aprendiz</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Desconocido</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Episodios VII-IX</td>
+        </tr>
+        <tr class="border-b text-center">
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Jyn Erso</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Humano</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Vallt</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Rebelde, Espía</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">22 BBY</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Rogue One: A Star Wars Story</td>
+        </tr>
+        <tr class="border-b text-center">
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Han Solo</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Humano</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Corellia</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Contrabandista</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">29 BBY</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Episodios IV-VI, Solo: A Star Wars Story</td>
+        </tr>
+        <tr class="border-b text-center">
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">C-3PO</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Droide Protocolo</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Desconocido</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Protocolo</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Desconocido</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Episodios I-IX, The Clone Wars, The Rise of Skywalker</td>
+        </tr>
+        <tr class="border-b text-center">
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Chewbacca</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Wookiee</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Kashyyyk</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Copiloto, Guerrero</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Desconocido</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Episodios III-IX, Solo: A Star Wars Story, The Rise of Skywalker</td>
+        </tr>
+        <tr class="border-b text-center">
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Yoda</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Yoda's species</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Desconocido</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Gran Maestro</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">896 ABY</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Episodios I-III, V, VI, VIII, IX, The Clone Wars, The Mandalorian</td>
+        </tr>
+        <tr class="border-b text-center">
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Darth Vader</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Humano</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Tatooine</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Sith Lord</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">41.9 ABY</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Episodios III-VI, Rogue One: A Star Wars Story</td>
+        </tr>
+        <tr class="border-b text-center">
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Leia Organa</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Humano</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Alderaan</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Princesa, Senadora</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">19 ABY</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Episodios IV-IX, The Clone Wars, The Rise of Skywalker</td>
+        </tr>
+        <tr class="border-b text-center">
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Padmé Amidala</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Humano</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Naboo</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Reina, Senadora</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">46 ABY</td>
+          <td class=" sm:px-2 sm:py-1 md:px-6 md:py-4">Episodio I, II, The Clone Wars, Star Wars: Clone Wars</td>
+        </tr>
+      </tbody>
     </table>
   </div>
+
+
+  <footer class="bg-gray-800 text-white py-4 mt-20 flex justify-center space-x-4">
+    <a href="https://starwars.fandom.com/es/wiki/Star_Wars"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Star_Wars_Yellow_Logo.svg/634px-Star_Wars_Yellow_Logo.svg.png" alt="Logo de Star Wars" class="w-15 h-10"></a>
+    <a href="https://www.instagram.com/starwars/?hl=es"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Logo de Instagram" class="w-15 h-10"></a>
+  </footer>
 
 </body>
 

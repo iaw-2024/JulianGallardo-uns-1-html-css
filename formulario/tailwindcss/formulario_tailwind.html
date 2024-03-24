@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <title>Formulario de Personajes</title>
+</head>
+
+<body class="bg-image h-screen w-screen bg-cover text-white flex-col justify-center items-center "
+  style="background-image: url('https://as01.epimg.net/epik/imagenes/2019/11/21/portada/1574334288_066507_1574334350_noticia_normal_recorte1.jpg')">
+  <nav class="bg-gray-800 text-white fixed top-0 w-full">
+    <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+      <a href="../../listado/tailwindcss/listado_tailwind.html"
+        class="dropdown-item block px-4 py-2 text-sm text-white dark:text-white hover:bg-gray-100 hover:text-gray-700 dark:hover:bg-gray-700">Listado
+        de Personajes</a>
+      <a href="../../listado/html_css/listado_css.html"
+        class="dropdown-item block px-4 py-2 text-sm text-white dark:text-white hover:bg-gray-100 hover:text-gray-700 dark:hover:bg-gray-700">Listado
+        con Css</a>
+      <a href="../../formulario/html_css/formulario_css.html"
+        class="dropdown-item block px-4 py-2 text-sm text-white dark:text-white hover:bg-gray-100 hover:text-gray-700 dark:hover:bg-gray-700">Formulario
+        con Css</a>
+      <a href="../../listado/tailwindcss/listado_tailwind.html"
+        class="dropdown-item block px-4 py-2 text-sm text-white dark:text-white hover:bg-gray-100 hover:text-gray-700 dark:hover:bg-gray-700">Listado
+        con Bootstrap</a>
+      <a href="../../formulario/tailwindcss/formulario_tailwind.html"
+        class="dropdown-item block px-4 py-2 text-sm text-white dark:text-white hover:bg-gray-100 hover:text-gray-700 dark:hover:bg-gray-700">Formulario
+        con Bootstrap</a>
+    </div>
+  </nav>
+  <div class="mt-20">
+    <h1 id="tituloForm"
+      class="text-center text-white text-3xl  text-shadow-lg text-shadow-offset-x-10  font-bold mt-20 mb-5 hover:text-yellow-400 ">
+      Formulario de Personajes</h1>
+  </div>
+  <div id="container_form" class="container px-4 mb-4 flex-row justify-center items-center">
+    <form id="form" method="post" class="container  mx-auto mt-8 px-10 sm:ml-8">
+      <div class="flex-col justify-center items-center w-full  ">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:ml-10 mx-auto">
+          <div>
+            <label for="nombre" class="block mb-2 text-white rounded w-1/6 ">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required
+              class="w-full px-4 py-2 border border-gray-300 rounded-md mb-4 bg-gray-800 text-white text-sm">
+          </div>
+          <div>
+            <label for="raza" class="block mb-2 text-white rounded w-1/6 ">Raza:</label>
+            <input type="text" id="raza" name="raza" required
+              class="w-full  px-4 py-2 border border-gray-300 rounded-md mb-4 bg-gray-800 text-white text-sm">
+          </div>
+          <div>
+            <label for="planeta" class="block mb-2 text-white rounded w-1/6 ">Planeta:</label>
+            <input type="text" id="planeta" name="planeta" required
+              class="w-full px-4 py-2 border border-gray-300 rounded-md mb-4 bg-gray-800 text-white text-sm">
+          </div>
+          <div>
+            <label for="rol" class="block mb-2 text-white rounded w-1/6 ">Rol:</label>
+            <input type="text" id="rol" name="rol" required
+              class="w-full  px-4 py-2 border border-gray-300 rounded-md mb-4 bg-gray-800 text-white text-sm">
+          </div>
+          <div>
+            <label for="nacimiento" class="block mb-2 text-white rounded w-1/6 ">Año de Nacimiento:</label>
+            <input type="text" id="nacimiento" name="nacimiento" required
+              class="w-full  px-4 py-2 border border-gray-300 rounded-md mb-4 bg-gray-800 text-white text-sm">
+          </div>
+          <div>
+            <label for="peliculas" class="block mb-2 text-white rounded w-1/6 ">Películas:</label>
+            <select id="peliculas" name="peliculas" multiple
+              class="w-full  px-4 py-2 border border-gray-300 rounded-md mb-4 bg-gray-800 text-white text-sm">
+              <option value="Episodio I">Star Wars: Episodio I - La amenaza fantasma</option>
+              <option value="Episodio II">Star Wars: Episodio II - El ataque de los clones</option>
+              <option value="Episodio III">Star Wars: Episodio III - La venganza de los Sith</option>
+              <option value="Episodio IV">Star Wars: Episodio IV - Una nueva esperanza</option>
+              <option value="Episodio V">Star Wars: Episodio V - El imperio contraataca</option>
+              <option value="Episodio VI">Star Wars: Episodio VI - El retorno del Jedi</option>
+              <option value="Episodio VII">Star Wars: Episodio VII - El despertar de la fuerza</option>
+              <option value="Episodio VIII">Star Wars: Episodio VIII - Los últimos Jedi</option>
+              <option value="Episodio IX">Star Wars: Episodio IX - El ascenso de Skywalker</option>
+              <option value="The Clone Wars">Star Wars: The Clone Wars</option>
+              <option value="The Mandalorian">Star Wars: The Mandalorian</option>
+              <option value="Rogue One">Star Wars: Rogue One</option>
+              <option value="Solo">Star Wars: Solo</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-center">
+        <input id="btn_submit" type="submit" value="Agregar Personaje"
+          class="bg-gray-700 text-white px-4 py-2 rounded-md hover:bg-gray-200 hover:text-gray-700 border border-gray-500 ">
+      </div>
+
+    </form>
+  </div>
+
+  <footer class="bg-gray-800 text-white py-4 mt-20 flex justify-center space-x-6">
+    <a href="https://starwars.fandom.com/es/wiki/Star_Wars"><img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Star_Wars_Yellow_Logo.svg/634px-Star_Wars_Yellow_Logo.svg.png"
+        alt="Logo de Star Wars" class="w-15 h-10"></a>
+    <a href="https://www.instagram.com/starwars/?hl=es"><img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png"
+        alt="Logo de Instagram" class="w-15 h-10"></a>
+  </footer>
+
+</body>
+
+</html>
